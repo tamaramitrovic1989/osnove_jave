@@ -53,9 +53,9 @@ public class XOTabla {
     }
 
     public void stampaj() {
-        System.out.println(this.polje1 + " | " + this.polje2 + " | " + this.polje3 + " | ");
-        System.out.println(this.polje4 + " | " + this.polje5 + " | " + this.polje6 + " | ");
-        System.out.println(this.polje7 + " | " + this.polje8 + " | " + this.polje9 + " | ");
+        System.out.println(this.polje1 + " | " + this.polje2 + " | " + this.polje3 );
+        System.out.println(this.polje4 + " | " + this.polje5 + " | " + this.polje6 );
+        System.out.println(this.polje7 + " | " + this.polje8 + " | " + this.polje9 );
 
         System.out.println();
         System.out.println("Igrac X: " + imeiPrezimeXIgraca);
@@ -170,9 +170,9 @@ public class XOTabla {
         }
     }
     public boolean popunjenaTabla() {
-        if (!(this.polje1.equals(" ") && this.polje2.equals(" ") && this.polje3.equals(" ") && this.polje4.equals(" ")
-                && this.polje5.equals(" ") && this.polje6.equals(" ") && this.polje7.equals(" ") && this.polje8.equals(" ")
-                && this.polje9.equals(" "))) {
+        if (!this.polje1.equals(" ")&& !this.polje2.equals(" ") && !this.polje3.equals(" ") && !this.polje4.equals(" ")
+                && !this.polje5.equals(" ") && !this.polje6.equals(" ") && !this.polje7.equals(" ") && !this.polje8.equals(" ")
+                && !this.polje9.equals(" ")) {
             return true;
         } else {
             return false;        }
@@ -208,7 +208,7 @@ public class XOTabla {
             return true;
         } else if (this.polje1.equals("0") && this.polje4.equals("0") && this.polje7.equals("0")) {
             return true;
-        } else if (this.polje2.equals("0")&&polje2.equals("0") && this.polje8.equals("0")) {
+        } else if (this.polje2.equals("0")&&polje5.equals("0") && this.polje8.equals("0")) {
             return true;
         } else if (this.polje3.equals("0") && this.polje6.equals("O") && this.polje9.equals("O")) {
             return true;
