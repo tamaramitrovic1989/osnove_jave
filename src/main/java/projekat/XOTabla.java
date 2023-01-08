@@ -20,7 +20,7 @@ public class XOTabla {
         return this.imeiPrezimeXIgraca;
     }
 
-    public String tImeiPrezimeOIgraca() {
+    public String getImeiPrezimeOIgraca() {
         return this.imeiPrezimeOIgraca;
     }
 
@@ -199,18 +199,18 @@ public class XOTabla {
             }
 
         }
-    public boolean pobednik0 () {
-        if (this.polje1.equals("O") && this.polje2.equals("0") && this.polje3.equals("O")) {
+    public boolean pobednikO () {
+        if (this.polje1.equals("O") && this.polje2.equals("O") && this.polje3.equals("O")) {
             return true;
-        } else if (this.polje4.equals("O") && this.polje5.equals("0") && this.polje6.equals("O")) {
+        } else if (this.polje4.equals("O") && this.polje5.equals("O") && this.polje6.equals("O")) {
             return true;
-        } else if (this.polje7.equals("O") && this.polje8.equals("0") && this.polje9.equals("0")) {
+        } else if (this.polje7.equals("O") && this.polje8.equals("O") && this.polje9.equals("O")) {
             return true;
-        } else if (this.polje1.equals("0") && this.polje4.equals("0") && this.polje7.equals("0")) {
+        } else if (this.polje1.equals("O") && this.polje4.equals("O") && this.polje7.equals("0")) {
             return true;
-        } else if (this.polje2.equals("0")&&polje5.equals("0") && this.polje8.equals("0")) {
+        } else if (this.polje2.equals("O")&&polje5.equals("O") && this.polje8.equals("O")) {
             return true;
-        } else if (this.polje3.equals("0") && this.polje6.equals("O") && this.polje9.equals("O")) {
+        } else if (this.polje3.equals("O") && this.polje6.equals("O") && this.polje9.equals("O")) {
             return true;
         } else if (this.polje1.equals("O") && this.polje5.equals("O") && this.polje9.equals("O")) {
             return true;

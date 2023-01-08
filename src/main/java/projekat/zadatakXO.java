@@ -18,7 +18,7 @@ public class zadatakXO {
         igra1.pokreniIgru();
 
 
-        while (!igra1.pobednikX() && !igra1.pobednik0() && !igra1.popunjenaTabla()) {
+        while (!igra1.pobednikX() && !igra1.pobednikO() && !igra1.popunjenaTabla()) {
             igra1.stampaj();
             System.out.println("Na potezu je igrac: " + igra1.getNaPotezu());
             System.out.print("Odigraj potez: ");
@@ -33,11 +33,12 @@ public class zadatakXO {
 
         }
         if (igra1.pobednikX()) {
-            System.out.println("Cestitamo! Pobedio je igrac X");
-        } else if (igra1.pobednik0()) {
-            System.out.println("Cestitamo! Pobedio je igrac O");
+            System.out.println();
+            System.out.println("Cestitamo! Pobedio je igrac X " );
+        }  else if (igra1.pobednikO()) {
+           System.out.println("Cestitamo! Pobedio je igrac O" );
 
-        } else {
+        } else if (igra1.popunjenaTabla()){
             System.out.println("Igra je neresena.");
 
         }
