@@ -1,10 +1,10 @@
-package d10_12_2023;
+package d10_01_2023;
 
 public class ClanskaKarta {
 
 
     private double popust;
-    private int brojKartice;
+    private String brojKartice;
 
     public double getPopust() {
         return popust;
@@ -14,15 +14,15 @@ public class ClanskaKarta {
         this.popust = popust;
     }
 
-    public int getBrojKartice() {
+    public String getBrojKartice() {
         return brojKartice;
     }
 
-    public void setBrojKartice(int brojKartice) {
+    public void setBrojKartice(String brojKartice) {
         this.brojKartice = brojKartice;
     }
 
-    public ClanskaKarta(double popust, int brojKartice) {
+    public ClanskaKarta(double popust, String brojKartice) {
         this.popust = popust;
         this.brojKartice = brojKartice;
     }

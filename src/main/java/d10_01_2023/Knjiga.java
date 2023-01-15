@@ -1,11 +1,11 @@
-package d10_12_2023;
+package d10_01_2023;
 
 public class Knjiga {
 
     private int isbn;
     private String naziv;
     private int godinaIzdanja;
-    private String autor;
+
     private Autor podaciAutora;
 
 
@@ -33,12 +33,11 @@ public class Knjiga {
         this.godinaIzdanja = godinaIzdanja;
     }
 
-    public String getAutor() {
-        return autor;
-    }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
+    public Knjiga(int isbn, String naziv, int godinaIzdanja) {
+        this.isbn = isbn;
+        this.naziv = naziv;
+        this.godinaIzdanja = godinaIzdanja;
     }
 
     public Autor getPodaciAutora() {
@@ -49,16 +48,11 @@ public class Knjiga {
         this.podaciAutora = podaciAutora;
     }
 
-    public Knjiga(int isbn, String naziv, int godinaIzdanja, String autor) {
-        this.isbn = isbn;
-        this.naziv = naziv;
-        this.godinaIzdanja = godinaIzdanja;
-        this.autor = autor;
-    }
+
 
     public void print (){
         System.out.println( isbn);
-        System.out.println(naziv+godinaIzdanja);
+        System.out.println(naziv+" "+ godinaIzdanja);
         System.out.println("Autor: " + this.podaciAutora.getIme()+this.podaciAutora.getPrezime());
 
     }
